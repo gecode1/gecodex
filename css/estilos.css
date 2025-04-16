@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --color-principal: #e30613;
+  --color-texto: #2e2e2e;
+  --color-fondo: #ffffff;
+  --max-width: 1200px;
+  --fuente-principal: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+header {
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-principal);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-texto);
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--color-principal);
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/FOTO PORTADA FACEBOOK 2.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.btn {
+  background-color: var(--color-principal);
+  color: white;
+  padding: 14px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #c3000f;
+  transform: scale(1.05);
+}
+
+.section {
+  padding: 100px 20px;
+  max-width: var(--max-width);
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  color: var(--color-principal);
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  gap: 30px;
+}
+
+.servicios {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card i {
+  font-size: 40px;
+  color: var(--color-principal);
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.parrafo-centrado {
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+}
+
+.destacar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.destacar div {
+  text-align: center;
+}
+
+.destacar h3 {
+  font-size: 28px;
+  color: var(--color-principal);
+}
+
+.equipo {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card-equipo {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.card-equipo img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card-equipo h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input, textarea {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  background-color: var(--color-principal);
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #c3000f;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.redes a {
+  margin: 0 10px;
+  color: white;
+  font-size: 22px;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 30px;
+  padding: 15px;
+  border-radius: 50%;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+.whatsapp:hover {
+  transform: scale(1.1);
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease-out;
+}
+
+#loader .spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--color-principal);
+  border-top: 5px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
+}
+
+#loader p {
+  font-size: 18px;
+  color: var(--color-principal);
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.animado {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.animado.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .destacar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+}
+
+/* NAVBAR */
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: var(--color-texto);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav#navbar {
+    display: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  nav#navbar ul {
+    flex-direction: column;
+    background: white;
+    padding: 15px;
+    gap: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav#navbar.open {
+    display: block;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GeCodeX - Tecnología que Impulsa tu Negocio</title>
+  <link rel="icon" type="image/png" href="img/LOGO GECODEX VERSION VERTICAL (EDITABLE)-04.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <div id="loader">
+    <div class="spinner"></div>
+    <p>Cargando GeCodeX...</p>
+  </div>
+
+  <header>
+    <div class="container header-content">
+      <div class="logo">GeCodeX</div>
+      <button class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#porque">¿Por qué GeCodeX?</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+  <section id="inicio" class="hero">
+    <div class="hero-text">
+      <h1>Impulsamos tu negocio con tecnología</h1>
+      <p>Automatiza tus procesos con soluciones digitales innovadoras adaptadas a tu empresa</p>
+      <a href="#contacto" class="btn">Solicita tu asesoría</a>
+    </div>
+  </section>
+
+  <section id="servicios" class="section animado">
+    <h2>Nuestros Servicios</h2>
+    <div class="grid servicios">
+      <div class="card">
+        <i class="fas fa-file-invoice"></i>
+        <h3>Facturación Electrónica</h3>
+        <p>Sistemas completos de facturación DTE conectados a Hacienda, QR, firma electrónica y control fiscal.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-code"></i>
+        <h3>Desarrollo Web</h3>
+        <p>Webs personalizadas, modernas y responsive que representan tu marca y generan resultados.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-tools"></i>
+        <h3>Mantenimiento de Equipos</h3>
+        <p>Soporte técnico, limpieza, reparación, instalación de sistemas y configuraciones avanzadas.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-network-wired"></i>
+        <h3>Soluciones IT</h3>
+        <p>Instalación de redes, servidores, ciberseguridad, cableado estructurado y soporte remoto.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="porque" class="section animado">
+    <h2>¿Por qué elegir a GeCodeX?</h2>
+    <div class="container">
+      <p class="parrafo-centrado">
+        Ofrecemos experiencia, atención personalizada y soluciones tecnológicas diseñadas para potenciar tu negocio.
+        Nuestro compromiso es convertirnos en tu aliado estratégico a través de herramientas que generen resultados reales.
+      </p>
+      <div class="destacar">
+        <div><h3>+3 años</h3><p>de experiencia</p></div>
+        <div><h3>+30 empresas</h3><p>atendidas con éxito</p></div>
+        <div><h3>100%</h3><p>adaptados a tu rubro</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="equipo" class="section animado">
+    <h2>Nuestro Equipo</h2>
+    <div class="grid equipo">
+      <div class="card-equipo">
+        <img src="img/CEO.JPG" alt="Gerente" />
+        <h4>Ing. Gerardo Henríquez</h4>
+        <p>Director General / Fundador</p>
+      </div>
+      <div class="card-equipo">
+        <img src="img/SIMBOLO_COLOR_ROJO.png" alt="Equipo Desarrollo" />
+        <h4>Equipo de Desarrollo</h4>
+        <p>Frontend / Backend / API Integrations</p>
+      </div>
+      <div class="card-equipo">
+        <img src="img/Soporte.jpeg" alt="Soporte" />
+        <h4>Soporte Técnico</h4>
+        <p>Mantenimiento / Asistencia / Infraestructura</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section animado">
+    <h2>Contáctanos</h2>
+    <form action="contactos/enviar.php" method="POST">
+      <input type="text" name="nombre" placeholder="Nombre completo" required />
+      <input type="email" name="email" placeholder="Correo electrónico" required />
+      <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+    
+  </section>
+
+  <footer>
+    <div class="redes">
+      <a href="https://www.facebook.com/GeCodeX" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/GeCodeX_" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@GeCodeX" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://wa.me/50369926119" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>&copy; 2025 GeCodeX. Todos los derechos reservados.</p>
+  </footer>
+
+  <a href="https://wa.me/50369926119" class="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="js/animado.js"></script>
+  <script src="js/navbar.js"></script>
+
+</body>
+</html>
